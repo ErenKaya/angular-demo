@@ -3,13 +3,14 @@ import { Hero } from './hero';
 import { HEROES } from './mock-heroes';
 
 @Injectable({
-  providedIn: 'root'
+providedIn: 'root'
 })
 export class HeroService {
 
-  constructor(private heroService: HeroService) { }
+constructor() { }
 
-  getHeroes(): Hero[] {
-  return HEROES;
+getHeroes(): Hero[] {
+return HEROES;
+
 }
-}
+}	
